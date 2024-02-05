@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@800&family=Nunito:wght@600&display=swap');
+
+$bg-color: #00001D;
+$card-color: #1D132C;
+$dark-pink: #FF8790;
+$medium-pink: #FFA2A9;
+$light-pink: #FFC0BE;
+$dark-purple: #8980C2;
+$light-purple: #B5ADEC;
+$white: #ffff;
+
+$NotoSans:'Noto Sans KR', sans-serif;
+$Nunito:  'Nunito', sans-serif;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $bg-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title-to-do-list-block{
+    background-color: $dark-pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 12em;
+    height: 3em;
+    border-radius: 12px;
+    content:'';
+    position: absolute;
+    top: 0;
+    margin: 4em 0em 2em 10em;
+
+    span{
+        color:$white;
+
+        font: {
+            family: $NotoSans;
+            weight: bold;
+            size: 22px;
+        }
+    }
+}
+
+.card-to-do-list{
+    background-color: $card-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 20em;
+    height: 32em;
+    border-radius: 40px;
+    margin-top: 5em;
+}
+
+
