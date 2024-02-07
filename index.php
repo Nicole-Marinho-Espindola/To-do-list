@@ -45,5 +45,7 @@
     <div class="copyright-block">
         <span>feito com <i class="fa-solid fa-heart icon"></i> por Nicole</span>
     </div>
+
+    <script src="./assets/js/changeColor.js"></script>
 </body>
 </html>

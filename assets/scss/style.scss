@@ -129,6 +129,12 @@ body{
     border-radius: 13px;
 }
 
+.card-item-purple{
+    @extend .card-item;
+    transition: all 600ms ease-in-out;
+    background-color: $light-purple;
+}
+
 .input-checkbox{
     appearance: none;
     height: 25px;
@@ -187,6 +193,12 @@ body{
         weight:bold;
         family: $Nunito;
     }
+}
+
+.input-text-purple{
+    @extend .input-text;
+    transition: all 600ms ease-in-out;
+    background-color: $light-purple;
 }
 
 //Estilo da copyright section

@@ -74,7 +74,7 @@ body {
   flex-direction: column;
   width: 100%; }
 
-.card-item {
+.card-item, .card-item-purple {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -84,6 +84,10 @@ body {
   width: 100%;
   background-color: #FFC0BE;
   border-radius: 13px; }
+
+.card-item-purple {
+  transition: all 600ms ease-in-out;
+  background-color: #B5ADEC; }
 
 .input-checkbox {
   appearance: none;
@@ -116,7 +120,7 @@ body {
     box-shadow: 1px 1px 7px #FFA2A9;
     transition: all 500ms ease-in-out; }
 
-.input-text {
+.input-text, .input-text-purple {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -130,6 +134,10 @@ body {
   font-size: 15px;
   font-weight: bold;
   font-family: "Nunito", sans-serif; }
+
+.input-text-purple {
+  transition: all 600ms ease-in-out;
+  background-color: #B5ADEC; }
 
 .copyright-block {
   display: flex;
