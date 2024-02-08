@@ -12,22 +12,25 @@ $grey: #8d829a;
 $NotoSans:'Noto Sans KR', sans-serif;
 $Nunito:  'Nunito', sans-serif;
 
-
-//Estilo do corpo da página
-body{
-    background-color: $bg-color;
+//Placeholder Center
+%center {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+//Estilo do corpo da página
+body{
+    @extend %center;
+    background-color: $bg-color;
     flex-direction: column;
 }
 
 //Estilo do titulo da página
 .title-to-do-list-block{
+    @extend %center;
     background-color: $dark-pink;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 12em;
     height: 3em;
     border-radius: 12px;
@@ -110,17 +113,13 @@ body{
 
 //Estilo do body do card "To do List"
 .card-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %center;
     flex-direction: column;
     width: 100%;
 }
 
 .card-item{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %center;
     flex-direction: row;
     margin-bottom: 1em;
     height: 3em;
@@ -164,9 +163,7 @@ body{
     }
 
     &:checked::before{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @extend %center;
         height: 25px;
         width: 25px;
         border-radius: 5px;
@@ -177,9 +174,7 @@ body{
 }
 
 .input-text{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %center;
     width: 65%;
     height: 100%;
     margin: 0px 10px;
@@ -203,9 +198,7 @@ body{
 
 //Estilo da copyright section
 .copyright-block{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %center;
     flex-direction: row;
     width: 100%;
 
