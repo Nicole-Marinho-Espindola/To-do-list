@@ -20,25 +20,25 @@
             <i class="fa-solid fa-circle-plus icon"></i>
         </div>
         <div class="card-body">
-            <div class="card-item" draggable="true">
+            <div class="card-item" draggable="true" id="item1">
                 <input class="input-checkbox" type="checkbox" name="" id="checkbox1">
                 <label for="checkbox1"><input class="input-text" type="text" value="Learn javascript"></label>
-                <i class="fa-solid fa-trash icon"></i>
+                <i class="fa-solid fa-trash icon" onclick="delet()"></i>
             </div>
-            <div class="card-item" draggable="true">
+            <div class="card-item" draggable="true" id="item2">
                 <input class="input-checkbox" type="checkbox" name="" id="checkbox2">
                 <label for="checkbox2"><input class="input-text" type="text" value="Learn Sass"></label>
-                <i class="fa-solid fa-trash icon"></i>
+                <i class="fa-solid fa-trash icon" onclick="delet()"></i>
             </div>
-            <div class="card-item" draggable="true">
+            <div class="card-item" draggable="true" id="item3">
                 <input class="input-checkbox" type="checkbox" name="" id="checkbox3">
                 <label for="checkbox3"><input class="input-text" type="text" value="Listen to music"></label>
-                <i class="fa-solid fa-trash icon"></i>
+                <i class="fa-solid fa-trash icon" onclick="delet()"></i>
             </div>
-            <div class="card-item" draggable="true">
+            <div class="card-item" draggable="true" id="item4">
                 <input class="input-checkbox" type="checkbox" name="" id="checkbox4">
                 <label for="checkbox4"><input class="input-text" type="text" value="Read a book"></label>
-                <i class="fa-solid fa-trash icon"></i>
+                <i class="fa-solid fa-trash icon" onclick="delet()"></i>
             </div>
         </div>
     </div>
@@ -48,5 +48,6 @@
 
     <script src="./assets/js/changeColor.js"></script>
     <script src="./assets/js/dragDrop.js"></script>
+    <script src="./assets/js/addDelete.js"></script>
 </body>
 </html>
