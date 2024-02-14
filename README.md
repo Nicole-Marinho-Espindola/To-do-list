@@ -5,7 +5,7 @@
 <div align="center">
   
   ### :pushpin: Veja uma prévia do projeto :small_red_triangle_down:
-  ![Captura de tela 2024-02-06 175811](https://github.com/Nicole-Marinho-Espindola/To-do-list/assets/111541571/dc7c4f2f-a307-4f8d-863d-3b227edf7f86)
+  ![Captura de tela 2024-02-08 170144](https://github.com/Nicole-Marinho-Espindola/To-do-list/assets/111541571/e04a6761-b7b2-45ee-aab0-c267f91d385e)
 
 </div>
 
