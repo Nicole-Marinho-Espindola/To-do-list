@@ -17,7 +17,7 @@
     <div class="card-to-do-list">
         <div class="card-head">
             <input class="card-head-input" type="text" placeholder="Add a new thing">
-            <i class="fa-solid fa-circle-plus icon"></i>
+            <i class="fa-solid fa-circle-plus icon" onclick="add()"></i>
         </div>
         <div class="card-body">
             <div class="card-item" draggable="true" id="item1">

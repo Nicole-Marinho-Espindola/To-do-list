@@ -6,3 +6,7 @@ function delet(){
 }
 
 //Adicionar um novo elemento após digitar no input "add a new thing"
+
+function add(){
+    
+}
