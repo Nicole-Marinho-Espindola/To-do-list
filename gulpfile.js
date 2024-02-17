@@ -2,15 +2,20 @@
 
 const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
+sass.compiler = require('node-sass')
 
-function buildStyles() {
+gulp.task('default', watchSass)
+gulp.task('sass', compileSass)
+
+function compileSass() {
     return gulp
-        .src('./assets/sass/*.scss')
-        .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
-        .pipe(gulp.dest('./css'));
+        .src('assets/scss/*.scss')
+        .pipe(sass({
+            outputStyle: 'compressed'
+        }).on('error', sass.logError))
+        .pipe(gulp.dest('assets/css'));
   };
-  
-  exports.buildStyles = buildStyles;
-  exports.watch = function () {
-    gulp.watch('./assets/sass/*.scss', ['sass']);
-  };
+
+function watchSass(){
+gulp.watch('assets/scss/*.scss', compileSass)
+}

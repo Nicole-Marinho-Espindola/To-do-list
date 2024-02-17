@@ -1,8 +1,12 @@
 //Deletar um elemento ao apertar o icone de lixeira
-
 function delet(){
-    const deleteItem = document.getElementById("item1");
-    deleteItem.remove();
+
+    const deleteItem = document.getElementsByClassName('card-item');
+
+    for (let i = 0; i < deleteItem.length; i++){
+
+        deleteItem[i].remove();     
+    }
 }
 
 //Adicionar um novo elemento após digitar no input "add a new thing"
