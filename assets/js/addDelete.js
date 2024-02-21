@@ -9,6 +9,8 @@ function delet(icon){
 //Adicionar um novo elemento após digitar no input "add a new thing"
 
 function add(){
+
+    // console.log('ta pegando');
     
     const input = document.getElementById('addTask');
 

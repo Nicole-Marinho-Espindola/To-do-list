@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./assets/css/global.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <script src="https://kit.fontawesome.com/cf8e3c5165.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>To do list</title>
 </head>
 <body>
@@ -17,7 +18,7 @@
     <div class="card-to-do-list">
         <div class="card-head">
             <input class="card-head-input" type="text" placeholder="Add a new thing" id="addTask">
-            <i class="fa-solid fa-circle-plus icon" onclick="add()"></i>
+            <button class="btn-plus" onclick="add()"><i class="fa-solid fa-plus icon"></i></button>
         </div>
         <div class="card-body">
             <div class="card-item" draggable="true">
