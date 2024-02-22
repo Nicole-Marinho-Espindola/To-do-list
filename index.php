@@ -21,7 +21,7 @@
             <button class="btn-plus" onclick="add()"><i class="fa-solid fa-plus icon"></i></button>
         </div>
         <div class="card-body">
-            <div class="card-item" draggable="true">
+            <div class="card-item" draggable="true" id="item">
                 <input class="input-checkbox" type="checkbox" name="" id="checkbox1">
                 <label for="checkbox1"><input class="input-text" type="text" value="Learn javascript"></label>
                 <i class="fa-solid fa-trash icon" onclick="delet(this)"></i>
@@ -29,16 +29,6 @@
             <div class="card-item" draggable="true">
                 <input class="input-checkbox" type="checkbox" name="" id="checkbox2">
                 <label for="checkbox2"><input class="input-text" type="text" value="Learn Sass"></label>
-                <i class="fa-solid fa-trash icon" onclick="delet(this)"></i>
-            </div>
-            <div class="card-item" draggable="true">
-                <input class="input-checkbox" type="checkbox" name="" id="checkbox3">
-                <label for="checkbox3"><input class="input-text" type="text" value="Listen to music"></label>
-                <i class="fa-solid fa-trash icon" onclick="delet(this)"></i>
-            </div>
-            <div class="card-item" draggable="true">
-                <input class="input-checkbox" type="checkbox" name="" id="checkbox4">
-                <label for="checkbox4"><input class="input-text" type="text" value="Read a book"></label>
                 <i class="fa-solid fa-trash icon" onclick="delet(this)"></i>
             </div>
         </div>

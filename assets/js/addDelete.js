@@ -8,23 +8,40 @@ function delet(icon){
 
 //Adicionar um novo elemento após digitar no input "add a new thing"
 
-function add(){
+const localStorageKey = 'to-do-list';
 
-    // console.log('ta pegando');
-    
-    const input = document.getElementById('addTask');
+function add() {
 
-    //Validação do input
+    let input = document.getElementById('addTask');
+    let inputValue = input.value.trim(); // Remova espaços em branco extras
 
-    if(!input.value){
+    if (!inputValue) {
 
         Swal.fire({
-            title: "Deseja enviar seu campo em branco?",
-            text: "por favor, preencha o campo para adicionar uma nova tarefa a lista!",
-            icon: "question"
-          });
+            title: "Campo em branco",
+            text: "Por favor, preencha o campo para adicionar uma nova tarefa à lista!",
+            icon: "warning",
+            font: "sans-serif"
+        });
 
-    }else{
-        let values = JSON.parse();//converte uma string json para um obj javascript
+    } else {
+        // Clonar a div modelo
+        let newItem = document.querySelector('.card-item').cloneNode(true); //cloneNode(true), significa que todos os descendentes da
+                                                                            // div card-item tbm serão copiados
+
+        // Modificar o valor do input dentro da nova div
+        newItem.querySelector('.input-text').value = inputValue;
+
+        // Adicionar nova div à div card-body
+        let cardBody = document.querySelector('.card-body');
+        cardBody.appendChild(newItem);
+
+        // Salvar no localstorage
+        let values = JSON.parse(localStorage.getItem(localStorageKey) || "[]");
+        values.push({
+            name: inputValue
+        });
+
+        localStorage.setItem(localStorageKey, JSON.stringify(values));
     }
 }
