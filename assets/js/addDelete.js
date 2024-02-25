@@ -23,25 +23,65 @@ function add() {
             icon: "warning",
             font: "sans-serif"
         });
+    }
+    // } else {
+    //     // Clonar a div modelo
+    //     
 
-    } else {
-        // Clonar a div modelo
-        let newItem = document.querySelector('.card-item').cloneNode(true); //cloneNode(true), significa que todos os descendentes da
-                                                                            // div card-item tbm serão copiados
+    //     // Modificar o valor do input dentro da nova div
+    //     
 
-        // Modificar o valor do input dentro da nova div
-        newItem.querySelector('.input-text').value = inputValue;
+    //     // Adicionar nova div à div card-body
+    //     
 
-        // Adicionar nova div à div card-body
-        let cardBody = document.querySelector('.card-body');
-        cardBody.appendChild(newItem);
+    //     
 
-        // Salvar no localstorage
+    // else {
+    //     const cardItems = document.getElementsByClassName('card-item');
+    
+    //     for (let i = 0; i < cardItems.length; i++) {
+
+    //         cardItems[i].classList.add('card-item'); 
+    
+    //         cardItems[i].querySelector('.input-text').value = inputValue;
+    
+    //         let cardBody = document.querySelector('.card-body');
+    //         cardBody.appendChild(cardItems[i]);
+    //     }
+    // }
+
+    else {
+
+        let newDiv = document.createElement('div');
+        newDiv.classList.add('card-item');
+    
+        let newInput = document.createElement('input');
+        newInput.setAttribute('type', 'checkbox');
+        newInput.classList.add('input-checkbox');
+        newDiv.appendChild(newInput)
+    
+        let newInputText = document.createElement('input');
+        newInputText.setAttribute('type', 'text');
+        newInputText.classList.add('input-text');
+        newInputText.value = inputValue;
+        newDiv.appendChild(newInputText)
+
+        let newIcon = document.createElement('i');
+        newIcon.classList.add('fa-solid', 'fa-trash', 'icon');
+        newInputText.setAttribute('onclick', 'delet(this)');
+        newDiv.appendChild(newIcon);
+    
+        let cardBody = document.getElementById('cardBody');
+        cardBody.appendChild(newDiv);
+    
+        // Salvar no localStorage
         let values = JSON.parse(localStorage.getItem(localStorageKey) || "[]");
         values.push({
             name: inputValue
         });
-
         localStorage.setItem(localStorageKey, JSON.stringify(values));
     }
+    
+    
+    
 }

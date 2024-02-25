@@ -20,7 +20,7 @@
             <input class="card-head-input" type="text" placeholder="Add a new thing" id="addTask">
             <button class="btn-plus" onclick="add()"><i class="fa-solid fa-plus icon"></i></button>
         </div>
-        <div class="card-body">
+        <div class="card-body" id="cardBody">
             <div class="card-item" draggable="true" id="item">
                 <input class="input-checkbox" type="checkbox" name="" id="checkbox1">
                 <label for="checkbox1"><input class="input-text" type="text" value="Learn javascript"></label>
