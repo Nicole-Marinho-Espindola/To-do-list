@@ -68,7 +68,7 @@ function add() {
 
         let newIcon = document.createElement('i');
         newIcon.classList.add('fa-solid', 'fa-trash', 'icon');
-        newInputText.setAttribute('onclick', 'delet(this)');
+        newIcon.setAttribute('onclick', 'delet(this)');
         newDiv.appendChild(newIcon);
     
         let cardBody = document.getElementById('cardBody');
