@@ -24,31 +24,6 @@ function add() {
             font: "sans-serif"
         });
     }
-    // } else {
-    //     // Clonar a div modelo
-    //     
-
-    //     // Modificar o valor do input dentro da nova div
-    //     
-
-    //     // Adicionar nova div à div card-body
-    //     
-
-    //     
-
-    // else {
-    //     const cardItems = document.getElementsByClassName('card-item');
-    
-    //     for (let i = 0; i < cardItems.length; i++) {
-
-    //         cardItems[i].classList.add('card-item'); 
-    
-    //         cardItems[i].querySelector('.input-text').value = inputValue;
-    
-    //         let cardBody = document.querySelector('.card-body');
-    //         cardBody.appendChild(cardItems[i]);
-    //     }
-    // }
 
     else {
 
@@ -58,13 +33,13 @@ function add() {
         let newInput = document.createElement('input');
         newInput.setAttribute('type', 'checkbox');
         newInput.classList.add('input-checkbox');
-        newDiv.appendChild(newInput)
+        newDiv.appendChild(newInput);
     
         let newInputText = document.createElement('input');
         newInputText.setAttribute('type', 'text');
         newInputText.classList.add('input-text');
         newInputText.value = inputValue;
-        newDiv.appendChild(newInputText)
+        newDiv.appendChild(newInputText);
 
         let newIcon = document.createElement('i');
         newIcon.classList.add('fa-solid', 'fa-trash', 'icon');
@@ -82,6 +57,16 @@ function add() {
         localStorage.setItem(localStorageKey, JSON.stringify(values));
     }
     
-    
-    
+    // // Verifica se há dados no Local Storage
+    // if(localStorage.getItem('localStorageKey')) {
+    //     // Se houver dados, adiciona-os à página
+    //     var newDiv = localStorage.getItem('div');
+    //     document.getElementById('idDoElemento').innerHTML = newDiv;
+
+    //     var item = localStorage.getItem('nomeDoItem');
+    //     document.getElementById('idDoElemento').innerHTML = item;
+        
+    //     var item = localStorage.getItem('nomeDoItem');
+    //     document.getElementById('idDoElemento').innerHTML = item;
+    // }
 }
